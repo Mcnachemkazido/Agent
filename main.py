@@ -1,9 +1,12 @@
 from modols.fieldagent import FieldAgent,CyberAgent
 from modols.mission import Mission
+from modols.agencydirector import AgencyDirector
 
 
 
 if __name__ == "__main__":
+    a = AgencyDirector("menachem")
+    print(a.name_admin)
     f1 = FieldAgent("123",5,"gruozlm")
     f2 = FieldAgent("321",10,"tl aviv")
     c1 = CyberAgent("789",3,"sorva")
@@ -13,3 +16,7 @@ if __name__ == "__main__":
     m1 = Mission("good","hir")
     m1.assign_an_agent(f1)
     print(m1.assigned_agent.code_name)
+
+
+
+
